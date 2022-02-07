@@ -56,7 +56,13 @@
         width: 100%;
       }
       #stop {
+        display: none;
         height: 100%;
         width: 100%;
         background: rgba(128, 128, 128, 0.445);
+        z-index: 5;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
