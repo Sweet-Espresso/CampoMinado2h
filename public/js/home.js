@@ -10,11 +10,24 @@ function revelar(id) {
   if(this.certos.includes(id)) {
     array[id-1].innerHTML = `<div class="certo"></div>`
   } else {
-    document.querySelector("#stop").style.zIndex = '90'
-    array[id-1].innerHTML = `<div class="errado"></div>`
-    
-    //https://s3-us-west-2.amazonaws.com/s.cdpn.io/29431/explosion@3x.gif
+    let stop = document.querySelector("#stop")
+    stop.style.display = 'flex'
+    stop.innerHTML = `<h1>Você perdeu</h1>
+    <button class="reiniciar" style="height: 50px;" onclick="reiniciar()">Reiniciar</button>`
+    gameOver()
   }
+}
+
+function gameOver() {
+  var selecao = area.getElementsByClassName('oculto')
+  var array = Object.keys(selecao)
+    .map(function(key) {
+        return selecao[key];
+    });
+    array.forEach((div, i) => div.innerHTML = `<div class="errado"></div>`)
+  this.certos.forEach((id, i) => {
+    revelar(id)
+  })
 }
 
 function reiniciar(dificuldade) {
