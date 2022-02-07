@@ -10,7 +10,7 @@
          flex-direction: column;
          justify-content: space-evenly;
        }
-       #tabela button {
+       #tabela button, #area button {
          height: 100px;
          width: 300px;
          border-radius: 10px;
@@ -23,11 +23,11 @@
         scale: 1.2;
         background-color: rgb(93, 101, 107)
        }
-       #reiniciar {
+       .reiniciar {
         margin-top: 10px;
         background:linear-gradient(to right, blue, rgb(118, 118, 196));
       }
-      #reiniciar:hover {
+      .reiniciar:hover {
         scale: 1.2;
         background:linear-gradient(to left, blue, rgb(118, 118, 196));
       }
@@ -61,8 +61,10 @@
       }
       #area {
          margin-top: 20px;
+         position: relative;
       }
       #facil {
+        position: relative;
         width: 300px;
         height: 300px;
         flex-wrap: wrap;
@@ -70,6 +72,7 @@
         display: flex;
       }
       #normal {
+        position: relative;
         width: 400px;
         height: 400px;
         flex-wrap: wrap;
@@ -77,6 +80,7 @@
         display: flex;
       }
       #dificil {
+        position: relative;
         width: 500px;
         height: 500px;
         flex-wrap: wrap;
