@@ -1,0 +1,62 @@
+      #cubin {
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background: greenyellow;
+        position: absolute;
+        transition: height 0.5s ease,
+        background 0.5s ease,
+        width 0.5s ease 0.5s
+      }
+      #cubin:hover {
+        height: 100%;
+        width: 100%;
+        background: red;
+      }
+      #cubin2 {
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        background: cyan;
+        position: absolute;
+        transition: height 0.5s ease,
+        background 0.5s ease,
+        width 0.5s ease 0.5s
+      }
+      #cubin2:hover {
+        height: 100%;
+        width: 100%;
+        background: white;
+      }
+      #cubin2:hover ~#cubin{
+        z-index: 2;
+      }
+      .oculto {
+        height: 100px;
+        width: 100px;
+        background: rgb(248, 211, 44);
+        outline: black 1px solid;
+        transition: background 0.5s ease;
+        z-index: 2;
+      }
+      .oculto:hover {
+        background: rgb(119, 112, 12);
+        cursor: pointer;
+      }
+      .certo {
+        background: greenyellow;
+        height: 100%;
+        width: 100%;
+      }
+      .errado {
+        background: red;
+        height: 100%;
+        width: 100%;
+      }
+      #stop {
+        height: 100%;
+        width: 100%;
+        background: rgba(128, 128, 128, 0.445);
+      }
