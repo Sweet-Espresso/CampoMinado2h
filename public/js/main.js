@@ -9,8 +9,8 @@ function carregar(tipo) {
     this.ocultos = 9
     this.tipo = tipo
     area.innerHTML = `
-    <div id="stop">
     <div id="facil"> 
+    <div id="stop"></div>
       <div class="oculto" onclick="revelar(1)"></div>
       <div class="oculto" onclick="revelar(2)"></div>
       <div class="oculto" onclick="revelar(3)"></div>
@@ -20,7 +20,6 @@ function carregar(tipo) {
       <div class="oculto" onclick="revelar(7)"></div>
       <div class="oculto" onclick="revelar(8)"></div>
       <div class="oculto" onclick="revelar(9)"></div>
-    </div>
     </div>`
   }
   if(tipo === 'normal') {
@@ -30,8 +29,8 @@ function carregar(tipo) {
     this.ocultos = 16
     this.tipo = tipo
     area.innerHTML = `
-    <div id="stop">
     <div id="normal"> 
+    <div id="stop"></div>
       <div class="oculto" onclick="revelar(1)"></div>
       <div class="oculto" onclick="revelar(2)"></div>
       <div class="oculto" onclick="revelar(3)"></div>
@@ -48,7 +47,6 @@ function carregar(tipo) {
       <div class="oculto" onclick="revelar(14)"></div>
       <div class="oculto" onclick="revelar(15)"></div>
       <div class="oculto" onclick="revelar(16)"></div>
-    </div>
     </div>`
   }
   if(tipo === 'dificil') {
@@ -58,8 +56,8 @@ function carregar(tipo) {
     this.ocultos = 25
     this.tipo = tipo
     area.innerHTML = `
-    <div id="stop">
     <div id="dificil"> 
+    <div id="stop"></div>
       <div class="oculto" onclick="revelar(1)"></div>
       <div class="oculto" onclick="revelar(2)"></div>
       <div class="oculto" onclick="revelar(3)"></div>
@@ -85,7 +83,6 @@ function carregar(tipo) {
       <div class="oculto" onclick="revelar(23)"></div>
       <div class="oculto" onclick="revelar(24)"></div>
       <div class="oculto" onclick="revelar(25)"></div>
-    </div>
     </div>`
   }
   sorteio()
